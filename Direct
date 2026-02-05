@@ -1,0 +1,37 @@
+# Build and start all services
+docker-compose up -d --build
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose downcd frontendcd frontend
+
+# Serve frontend (any static server)
+python3 -m http.server 8000
+# or
+npx serve .https://github.com/YOUR-USERNAME/crypto-trading-bot.gitcd backend
+
+# Copy environment file
+cp .env.example .env
+
+# Edit .env with your settings
+nano .env
+
+# Install dependencies
+npm install
+
+# Start MongoDB and Redis
+sudo systemctl start mongod
+sudo systemctl start redis
+
+# Run migrations
+npm run migrate
+
+# Start development server
+npm run dev
+
+# Serve frontend (any static server)
+python3 -m http.server 8000
+# or
+npx serve .
