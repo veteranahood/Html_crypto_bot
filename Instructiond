@@ -1,0 +1,2 @@
+# Download and run setup script
+curl -L https://raw.githubusercontent.com/YOUR-USERNAME/crypto-trading-bot/main/scripts/setup.sh | bash
