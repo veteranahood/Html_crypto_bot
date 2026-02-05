@@ -1,0 +1,56 @@
+
+```json
+{
+  "name": "crypto-trading-bot",
+  "version": "1.0.0",
+  "description": "AI-powered Crypto.com trading bot with 16 MBTI personality system",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev",
+    "build": "cd backend && npm run build",
+    "test": "cd backend && npm test",
+    "lint": "cd backend && npm run lint",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "deploy": "bash scripts/deploy.sh",
+    "setup": "bash scripts/setup.sh"
+  },
+  "workspaces": [
+    "backend"
+  ],
+  "keywords": [
+    "crypto",
+    "trading",
+    "bot",
+    "ai",
+    "crypto.com",
+    "blockchain",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/crypto-trading-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR-USERNAME/crypto-trading-bot/issues"
+  },
+  "homepage": "https://github.com/YOUR-USERNAME/crypto-trading-bot#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.8.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
+```
