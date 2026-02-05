@@ -1,0 +1,10 @@
+POST /api/ai/personalities/weights
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "personalities": [
+    {"mbti": "INTJ", "weight": 1.5},
+    {"mbti": "ENTP", "weight": 1.2}
+  ]
+  }
