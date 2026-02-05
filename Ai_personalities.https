@@ -1,0 +1,2 @@
+GET /api/ai/personalities
+Authorization: Bearer <token>
