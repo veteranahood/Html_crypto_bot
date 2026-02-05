@@ -1,0 +1,9 @@
+POST /api/ai/analyze
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "symbol": "BTC_USDT",
+  "timeframe": "1h",
+  "dataPoints": 100
+  }
